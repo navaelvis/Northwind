@@ -8,7 +8,7 @@ namespace Northwind.Repositories.EFCore.DataContext
         public NorthwindContext CreateDbContext(string[] args)
         {
             var optionBuilder = new DbContextOptionsBuilder<NorthwindContext>();
-            optionBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;database=NorthwindDB");
+            optionBuilder.UseSqlServer("Server=localhost;Database=NorthwindDB;User Id=sa;Password=reallyStrongPwd123;");
 
             return new NorthwindContext(optionBuilder.Options);
         }
