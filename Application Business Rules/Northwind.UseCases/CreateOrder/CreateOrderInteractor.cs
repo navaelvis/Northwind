@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Northwind.UseCases.CreateOrder
 {
-    public class CreateOrderInteractor //: IRequestHandler<CreateOrderInputPort, int>
+    public class CreateOrderInteractor : IRequestHandler<CreateOrderInputPort, int>
     {
         readonly IOrderRepository _orderRepository;
         readonly IOrderDetailRepository _orderDetailRepository;
@@ -18,7 +18,7 @@ namespace Northwind.UseCases.CreateOrder
             IUnitOfWork unitOfWork) =>
             (_orderRepository, _orderDetailRepository, _unitOfWork) =
             (orderRepository, orderDetailRepository, unitOfWork);
-        public async System.Threading.Tasks.Task<int> Handle(CreateOrderInputPort request,
+        public async Task<int> Handle(CreateOrderInputPort request,
             CancellationToken cancellationToken)
         {
             Order order = new Order
