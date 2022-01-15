@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Northwind.UseCases.CreateOrder
 {
-    public class CreateOrderInteractor : IRequestHandler<CreateOrderInputPort, int>
+    public class CreateOrderInteractor : AsyncRequestHandler<CreateOrderInputPort>
     {
         readonly IOrderRepository _orderRepository;
         readonly IOrderDetailRepository _orderDetailRepository;
@@ -18,24 +18,24 @@ namespace Northwind.UseCases.CreateOrder
             IUnitOfWork unitOfWork) =>
             (_orderRepository, _orderDetailRepository, _unitOfWork) =
             (orderRepository, orderDetailRepository, unitOfWork);
-        public async Task<int> Handle(CreateOrderInputPort request,
+        protected async override Task Handle(CreateOrderInputPort request,
             CancellationToken cancellationToken)
         {
             Order order = new Order
             {
-                CustomerId = request.CustomerId,
+                CustomerId = request.RequestData.CustomerId,
                 OrderDate = DateTime.Now,
-                ShipAddress = request.ShipAddress,
-                ShipCity = request.ShipCity,
-                ShipCountry = request.ShipPostalCode,
-                ShipPostalCode = request.ShipPostalCode,
+                ShipAddress = request.RequestData.ShipAddress,
+                ShipCity = request.RequestData.ShipCity,
+                ShipCountry = request.RequestData.ShipPostalCode,
+                ShipPostalCode = request.RequestData.ShipPostalCode,
                 ShippingType = Entities.Enums.ShippingType.Road,
                 DiscountType = Entities.Enums.DiscountType.Percentage,
                 Discount = 10
             };
             _orderRepository.Create(order);
 
-            foreach (var detail in request.OrderDetails)
+            foreach (var detail in request.RequestData.OrderDetails)
             {
                 _orderDetailRepository.Create(
                     new OrderDetail
@@ -57,7 +57,7 @@ namespace Northwind.UseCases.CreateOrder
                 throw new GeneralException("Error al crear la orden", ex.Message);
             }
 
-            return order.Id;
+            request.OutputPort.Handle(order.Id);
         }
     }
 }
