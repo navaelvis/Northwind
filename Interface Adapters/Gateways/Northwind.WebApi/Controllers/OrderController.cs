@@ -11,11 +11,11 @@ namespace Northwind.WebApi.Controllers
     {
         readonly IMediator _mediator;
         public OrderController(IMediator mediator) => _mediator = mediator;
-        [HttpPost("create-order")]
-        public async Task<ActionResult<int>> CreateOrder(
-            CreateOrderInputPort orderInputPort)
-        {
-            return await _mediator.Send(orderInputPort);
-        }
+        //[HttpPost("create-order")]
+        //public async Task<ActionResult<int>> CreateOrder(
+        //    CreateOrderInputPort orderInputPort)
+        //{
+        //    return await _mediator.Send(orderInputPort);
+        //}
     }
 }

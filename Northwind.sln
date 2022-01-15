@@ -1,31 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Enterprise Business Rules", "Enterprise Business Rules", "{EE61514E-AE1F-4327-B192-C8770533C79A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Entities", "Enterprise Business Rules\Northwind.Entities\Northwind.Entities.csproj", "{D13CBABF-AF95-4061-B4A2-E516F5A69D5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Entities", "Enterprise Business Rules\Northwind.Entities\Northwind.Entities.csproj", "{D13CBABF-AF95-4061-B4A2-E516F5A69D5C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface Adapters", "Interface Adapters", "{9BB9FA51-57C4-464B-B825-8F91FBA91289}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{BA2E766F-F363-41AF-8528-C9952A136D14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Repositories.EFCore", "Interface Adapters\Gateways\Northwind.Repositories.EFCore\Northwind.Repositories.EFCore.csproj", "{5EAD2567-1108-4BB7-A7AD-65C67EE23BB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Repositories.EFCore", "Interface Adapters\Gateways\Northwind.Repositories.EFCore\Northwind.Repositories.EFCore.csproj", "{5EAD2567-1108-4BB7-A7AD-65C67EE23BB8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Business Rules", "Application Business Rules", "{62932F13-E9AD-41B8-BF5E-C1DF21A1CBAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.UseCases", "Application Business Rules\Northwind.UseCases\Northwind.UseCases.csproj", "{FFAEDDF1-4742-45E5-8A9E-6C2F53CACE3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.UseCases", "Application Business Rules\Northwind.UseCases\Northwind.UseCases.csproj", "{FFAEDDF1-4742-45E5-8A9E-6C2F53CACE3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.UseCasesDTOs", "Application Business Rules\Northwind.UseCasesDTOs\Northwind.UseCasesDTOs.csproj", "{5E9810AE-F1DD-4F05-8E82-6A388E3B53D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.UseCasesDTOs", "Application Business Rules\Northwind.UseCasesDTOs\Northwind.UseCasesDTOs.csproj", "{5E9810AE-F1DD-4F05-8E82-6A388E3B53D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.IoC", "Interface Adapters\Northwind.IoC\Northwind.IoC.csproj", "{C1229006-2A9B-4C6E-8641-5D14108D6BA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.IoC", "Interface Adapters\Northwind.IoC\Northwind.IoC.csproj", "{C1229006-2A9B-4C6E-8641-5D14108D6BA7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presenters", "Presenters", "{D6DC6005-2095-4697-8E93-08A95FF0079A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebExceptionsPresenter", "Interface Adapters\Presenters\Northwind.WebExceptionsPresenter\Northwind.WebExceptionsPresenter.csproj", "{6EE4F208-2F2D-41A2-A01D-B1EA5FD43C1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.WebExceptionsPresenter", "Interface Adapters\Presenters\Northwind.WebExceptionsPresenter\Northwind.WebExceptionsPresenter.csproj", "{6EE4F208-2F2D-41A2-A01D-B1EA5FD43C1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebApi", "Interface Adapters\Gateways\Northwind.WebApi\Northwind.WebApi.csproj", "{707B16D6-6A32-48B7-863C-6E4E5BACF167}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.WebApi", "Interface Adapters\Gateways\Northwind.WebApi\Northwind.WebApi.csproj", "{707B16D6-6A32-48B7-863C-6E4E5BACF167}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{8DD5B2AF-1F64-4992-B4D5-624B8662AD5D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Controllers", "Interface Adapters\Controller\Northwind.Controllers\Northwind.Controllers.csproj", "{D4DAFB06-39E3-455D-BEF2-B1831804E508}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Presenters", "Interface Adapters\Presenters\Northwind.Presenters\Northwind.Presenters.csproj", "{BE330B4C-A066-40FE-B2B7-204C0087CB48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,9 +41,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D13CBABF-AF95-4061-B4A2-E516F5A69D5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -124,6 +127,33 @@ Global
 		{707B16D6-6A32-48B7-863C-6E4E5BACF167}.Release|x64.Build.0 = Release|Any CPU
 		{707B16D6-6A32-48B7-863C-6E4E5BACF167}.Release|x86.ActiveCfg = Release|Any CPU
 		{707B16D6-6A32-48B7-863C-6E4E5BACF167}.Release|x86.Build.0 = Release|Any CPU
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508}.Debug|x64.Build.0 = Debug|Any CPU
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508}.Debug|x86.Build.0 = Debug|Any CPU
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508}.Release|x64.ActiveCfg = Release|Any CPU
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508}.Release|x64.Build.0 = Release|Any CPU
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508}.Release|x86.ActiveCfg = Release|Any CPU
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508}.Release|x86.Build.0 = Release|Any CPU
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48}.Debug|x64.Build.0 = Debug|Any CPU
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48}.Debug|x86.Build.0 = Debug|Any CPU
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48}.Release|x64.ActiveCfg = Release|Any CPU
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48}.Release|x64.Build.0 = Release|Any CPU
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48}.Release|x86.ActiveCfg = Release|Any CPU
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D13CBABF-AF95-4061-B4A2-E516F5A69D5C} = {EE61514E-AE1F-4327-B192-C8770533C79A}
@@ -135,5 +165,11 @@ Global
 		{D6DC6005-2095-4697-8E93-08A95FF0079A} = {9BB9FA51-57C4-464B-B825-8F91FBA91289}
 		{6EE4F208-2F2D-41A2-A01D-B1EA5FD43C1B} = {D6DC6005-2095-4697-8E93-08A95FF0079A}
 		{707B16D6-6A32-48B7-863C-6E4E5BACF167} = {BA2E766F-F363-41AF-8528-C9952A136D14}
+		{8DD5B2AF-1F64-4992-B4D5-624B8662AD5D} = {9BB9FA51-57C4-464B-B825-8F91FBA91289}
+		{D4DAFB06-39E3-455D-BEF2-B1831804E508} = {8DD5B2AF-1F64-4992-B4D5-624B8662AD5D}
+		{BE330B4C-A066-40FE-B2B7-204C0087CB48} = {D6DC6005-2095-4697-8E93-08A95FF0079A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {638E7DD4-C07A-426E-8E4E-9C9FE145C355}
 	EndGlobalSection
 EndGlobal
